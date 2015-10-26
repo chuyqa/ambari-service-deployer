@@ -1,0 +1,55 @@
+{
+    "default_password": "admin",
+    "services": [
+        {
+            "name": "HDFS_Visualizer",
+            "Properties": [
+                {
+                    "href": "https://github.com/abajwa-hw/hdpviz.git",
+                    "Description": "Ambari stack/view for easily installing and managing HDP Visualizer, inspired by Twitter's HDFS du on HDP cluster",
+                    "Script": "hdpviz.sh"
+                }
+            ]
+        },
+        {
+            "name": "Maven_Service",
+            "Properties": [
+                {
+                    "href": "https://github.com/randerzander/maven-service.git",
+                    "Description": "An Ambari Stack service package for the Apache Maven java package build tool.",
+                    "Script": "maven-service.sh"
+                }
+            ]
+        },
+        {
+            "name": "node-red",
+            "Properties": [
+                {
+                    "href": "https://github.com/node-red/node-red.git",
+                    "Description": "A visual tool for wiring the Internet of Things.",
+                    "Script": "node-red.sh"
+                }
+            ]
+        },
+	{
+            "name": "Tachyon",
+            "Properties": [
+                {
+                    "href": "https://github.com/seraphin/tachyon-service.git",
+                    "Description": "A memory-centric distributed storage system enabling reliable data sharing at memory-speed across cluster frameworks.",
+                    "Script": "tachyon.sh"
+                }
+            ]
+        },
+	{
+            "name": "Zeppelin",
+            "Properties": [
+                {
+                    "href": "https://github.com/hortonworks-gallery/ambari-zeppelin-service.git",
+                    "Description": "A web-based notebook that enables interactive data analytics.",
+                    "Script": "zeppelin.sh"
+                }
+            ]
+        }
+    ]
+}
